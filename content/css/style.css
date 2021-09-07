@@ -17,4 +17,12 @@ a {
 li {
   list-style: none;
 }
+
+.btn-trigger {
+  display: none;
+}
+
+.main-nav {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
