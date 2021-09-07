@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    width: 100%;
     background-color: #b5dffa;
 }
 
@@ -26,8 +25,10 @@ li {
 }
 
 .conteiner{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
 }
 /*--------------------------------------------
 header
@@ -91,9 +92,44 @@ about
 /*--------------------------------------------
 skill
 ----------------------------------------------*/
-.skill-item{
-    h3 i p{
+.skill-card{
+    border: solid 1px $main-color;
+    border-radius: 5%;
+    h3{
         text-align: center;
+    }
+}
+/*--------------------------------------------
+work
+----------------------------------------------*/
+.work-item{
+    border: solid 1px $main-color;
+    border-radius: 5%;
+}
+/*--------------------------------------------
+contact
+----------------------------------------------*/
+.contact-link{
+    display: flex;
+}
+/*--------------------------------------------
+footer
+----------------------------------------------*/
+#footer{
+    margin-bottom: 0;
+    background-color: darken(#b5dffa, 10%);
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.copyright{
+    background-color: darken(#b5dffa, 20%);
+    text-align: center;
+    p{
+        color: $main-color;
+        margin-bottom: 0;
+        padding: .5rem;
     }
 }
 @media screen and (min-width: 1024px) {}
