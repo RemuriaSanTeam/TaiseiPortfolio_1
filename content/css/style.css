@@ -19,6 +19,21 @@ li {
   list-style: none;
 }
 
+.section-title {
+  font-size: 2.5rem;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*--------------------------------------------
+header
+----------------------------------------------*/
 .btn-trigger {
   display: none;
 }
@@ -36,9 +51,54 @@ li {
 
 .btn-toggle span {
   position: absolute;
-  left: 0;
   width: 100%;
   height: 4px;
   background-color: #9E76B4;
+}
+
+.btn-toggle span:nth-of-type(1) {
+  top: 0;
+}
+
+.btn-toggle span:nth-of-type(2) {
+  top: 20px;
+}
+
+.btn-toggle span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.btn-toggle:active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+          transform: translateY(20px) rotate(-45deg);
+}
+
+.btn-toggle:active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.btn-toggle:active span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(45deg);
+          transform: translateY(-20px) rotate(45deg);
+}
+
+/*--------------------------------------------
+about
+----------------------------------------------*/
+.basic-info .hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*--------------------------------------------
+skill
+----------------------------------------------*/
+.skill-item h3 i p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
