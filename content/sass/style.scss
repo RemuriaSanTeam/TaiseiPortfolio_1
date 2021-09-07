@@ -20,6 +20,9 @@ li {
     list-style: none;
 }
 
+section{
+    margin: 10% auto;
+}
 .section-title{
     font-size: 2.5rem;
 }
@@ -33,11 +36,15 @@ li {
 /*--------------------------------------------
 header
 ----------------------------------------------*/
+#header{
+    position: fixed;
+    z-index: 10;
+}
 .btn-trigger {
     display: none;
 }
 
-.main-nav {
+.main-nav{
     display: none;
 }
 
@@ -84,33 +91,59 @@ header
 /*--------------------------------------------
 about
 ----------------------------------------------*/
+.about-info{
+    margin: auto 2rem;
+}
 .basic-info .hobby{
     display: flex;
     flex-direction: column;
 }
-
 /*--------------------------------------------
 skill
 ----------------------------------------------*/
 .skill-card{
-    border: solid 1px $main-color;
-    border-radius: 5%;
+    @include card-border();
     h3{
         text-align: center;
     }
+}
+.skill-item{
+    margin: 1.5rem 2.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.fa-orange{
+    color: #F79428;
+}
+.fa-blue{
+    color: #235BC8;
+}
+.fa-yellow{
+    color: #FFD400;
+}
+.fa-sky{
+    color: #35C1DD;
+}
+.fa-red{
+    color: #EF4644;
 }
 /*--------------------------------------------
 work
 ----------------------------------------------*/
 .work-item{
-    border: solid 1px $main-color;
-    border-radius: 5%;
+    @include card-border();
+    img{
+        display: block;
+        margin: 0 auto;
+    }
 }
 /*--------------------------------------------
 contact
 ----------------------------------------------*/
 .contact-link{
     display: flex;
+    justify-content: space-around;
+    margin: auto 20%;
 }
 /*--------------------------------------------
 footer
@@ -121,7 +154,11 @@ footer
 }
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 2.5rem;
+    a{
+        font-size: 1.5rem;
+    }
 }
 .copyright{
     background-color: darken(#b5dffa, 20%);
@@ -132,4 +169,11 @@ footer
         padding: .5rem;
     }
 }
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .main-nav{
+        width: 20%;
+        max-width: 500px;
+        display: flex;
+
+    }
+}
