@@ -98,6 +98,20 @@ about
     display: flex;
     flex-direction: column;
 }
+.about-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about-img{
+    width: 40%;
+    height: 40%;
+    max-width: 200px;
+    margin-right: 2.5rem;
+    img{
+        border-radius: 50%;
+    }
+}
 /*--------------------------------------------
 skill
 ----------------------------------------------*/
@@ -108,9 +122,10 @@ skill
     }
 }
 .skill-item{
-    margin: 1.5rem 2.5rem 0;
+    margin: 2rem 4rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .fa-orange{
     color: #F79428;
@@ -176,4 +191,5 @@ footer
         display: flex;
 
     }
+    
 }

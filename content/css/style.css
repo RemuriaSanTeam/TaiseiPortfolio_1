@@ -112,6 +112,30 @@ about
           flex-direction: column;
 }
 
+.about-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-img {
+  width: 40%;
+  height: 40%;
+  max-width: 200px;
+  margin-right: 2.5rem;
+}
+
+.about-img img {
+  border-radius: 50%;
+}
+
 /*--------------------------------------------
 skill
 ----------------------------------------------*/
@@ -126,12 +150,15 @@ skill
 }
 
 .skill-item {
-  margin: 1.5rem 2.5rem 0;
+  margin: 2rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fa-orange {
