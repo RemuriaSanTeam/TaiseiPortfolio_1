@@ -102,6 +102,10 @@ about
   margin: auto 2rem;
 }
 
+.about-info h2 {
+  margin-top: 1.175rem;
+}
+
 .basic-info .hobby {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +127,7 @@ about
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1.5rem auto;
 }
 
 .about-img {
@@ -134,6 +139,13 @@ about
 
 .about-img img {
   border-radius: 50%;
+}
+
+.hobby-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem auto;
 }
 
 /*--------------------------------------------

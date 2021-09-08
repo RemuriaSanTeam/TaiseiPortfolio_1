@@ -93,6 +93,9 @@ about
 ----------------------------------------------*/
 .about-info{
     margin: auto 2rem;
+    h2{
+        margin-top: 1.175rem;
+    }
 }
 .basic-info .hobby{
     display: flex;
@@ -102,6 +105,7 @@ about
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 1.5rem auto;
 }
 .about-img{
     width: 40%;
@@ -111,6 +115,11 @@ about
     img{
         border-radius: 50%;
     }
+}
+.hobby-list{
+    display: flex;
+    //flex-direction: column;
+    margin: 1.5rem auto;
 }
 /*--------------------------------------------
 skill
