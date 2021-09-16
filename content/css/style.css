@@ -154,7 +154,7 @@ skill
 .skill-card {
   margin: 1.125rem;
   border: solid 1px #F79428;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 .skill-card h3 {
@@ -199,7 +199,7 @@ work
 .work-item {
   margin: 1.125rem;
   border: solid 1px #F79428;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 .work-item img {

@@ -1,4 +1,4 @@
-@mixin card-border($color:$main-color,$border-radius:5%) {
+@mixin card-border($color:$main-color,$border-radius:20px) {
     margin: 1.125rem;
     border: solid 1px $color;
     border-radius: $border-radius;
