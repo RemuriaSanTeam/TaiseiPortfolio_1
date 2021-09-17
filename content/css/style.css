@@ -19,10 +19,11 @@ li {
 }
 
 section {
-  margin: 10% auto;
+  margin: 2rem auto;
 }
 
 .section-title {
+  margin: auto 1.125rem;
   font-size: 2.5rem;
 }
 
@@ -59,6 +60,7 @@ header
   position: relative;
   width: 50px;
   height: 44px;
+  background: #35C1DD;
   cursor: pointer;
 }
 
@@ -207,6 +209,18 @@ work
   margin: 0 auto;
 }
 
+.work-text {
+  margin: 5% auto;
+}
+
+.work-img {
+  border-radius: 20px 20px 0 0;
+}
+
+.fa-black {
+  color: black;
+}
+
 /*--------------------------------------------
 contact
 ----------------------------------------------*/
@@ -216,7 +230,7 @@ contact
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: auto 20%;
+  margin: 8% 20%;
 }
 
 /*--------------------------------------------
