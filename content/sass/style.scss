@@ -50,15 +50,16 @@ header
 }
 
 .btn-toggle {
-    position: relative;
+    position: absolute;
     width: 50px;
     height: 44px;
-    background: #35C1DD;
+    //background: #35C1DD;
     cursor: pointer;
     span {
         position: absolute;
         width: 100%;
         height: 4px;
+        transition: all .5s;
         background-color: $main-color;
 
         &:nth-of-type(1) {
@@ -210,6 +211,9 @@ footer
         max-width: 500px;
         display: flex;
 
+    }
+    .btn-toggle{
+        display: none;
     }
     
 }
