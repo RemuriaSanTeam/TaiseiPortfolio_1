@@ -41,11 +41,29 @@ section {
 }
 
 /*--------------------------------------------
-header
+    main
+--------------------------------------------*/
+#main-visual {
+  background: url("../img/yokohama2021_10.png") no-repeat;
+  background-size: cover;
+  padding: 8rem;
+}
+
+#main-visual h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  background: rgba(28, 46, 119, 0.6);
+  padding: 1rem;
+  display: inline-block;
+  position: absolute;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------
+    header
 ----------------------------------------------*/
 #header {
   position: fixed;
-  z-index: 10;
 }
 
 .btn-trigger {
@@ -99,7 +117,7 @@ header
 }
 
 /*--------------------------------------------
-about
+    about
 ----------------------------------------------*/
 .about-info {
   margin: auto 2rem;
@@ -107,6 +125,10 @@ about
 
 .about-info h2 {
   margin-top: 1.175rem;
+}
+
+.basic-info h2 {
+  font-size: 1.5rem;
 }
 
 .basic-info .hobby {
@@ -152,7 +174,7 @@ about
 }
 
 /*--------------------------------------------
-skill
+    skill
 ----------------------------------------------*/
 .skill-card {
   margin: 1.125rem;
@@ -197,7 +219,7 @@ skill
 }
 
 /*--------------------------------------------
-work
+    work
 ----------------------------------------------*/
 .work-item {
   margin: 1.125rem;
@@ -223,7 +245,7 @@ work
 }
 
 /*--------------------------------------------
-contact
+    contact
 ----------------------------------------------*/
 .contact-link {
   display: -webkit-box;
@@ -234,8 +256,16 @@ contact
   margin: 8% 20%;
 }
 
+.fa-twitter-color {
+  color: #00acee;
+}
+
+.fa-purple {
+  color: #A03FFC;
+}
+
 /*--------------------------------------------
-footer
+    footer
 ----------------------------------------------*/
 #footer {
   margin-bottom: 0;
@@ -267,7 +297,7 @@ footer
   padding: .5rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 720px) {
   .main-nav {
     width: 20%;
     max-width: 500px;

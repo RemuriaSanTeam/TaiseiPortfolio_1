@@ -1,4 +1,4 @@
-@import "variables","mixin";
+@import "variables", "mixin";
 
 html {
     scroll-behavior: smooth;
@@ -20,32 +20,52 @@ li {
     list-style: none;
 }
 
-section{
+section {
     margin: 2rem auto;
 }
-.section-title{
+
+.section-title {
     margin: auto 1.125rem;
     font-size: 2.5rem;
 }
 
-.conteiner{
+.conteiner {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 /*--------------------------------------------
-header
-----------------------------------------------*/
-#header{
-    position: fixed;
-    z-index: 10;
+    main
+--------------------------------------------*/
+#main-visual {
+    background: url('../img/yokohama2021_10.png') no-repeat;
+    background-size: cover;
+    padding: 8rem;
+    h1 {
+        color: #fff;
+        font-size: 1.5rem;
+        background: rgba($color: #1C2E77, $alpha: 0.6);
+        padding: 1rem;
+        display: inline-block;
+        position: absolute;
+        margin: 0 auto;
+    }
 }
+
+/*--------------------------------------------
+    header
+----------------------------------------------*/
+#header {
+    position: fixed;
+}
+
 .btn-trigger {
     display: none;
 }
 
-.main-nav{
+.main-nav {
     display: none;
 }
 
@@ -55,6 +75,7 @@ header
     height: 44px;
     //background: #35C1DD;
     cursor: pointer;
+
     span {
         position: absolute;
         width: 100%;
@@ -74,6 +95,7 @@ header
             bottom: 0;
         }
     }
+
     &:active {
         span {
             &:nth-of-type(1) {
@@ -92,128 +114,167 @@ header
 }
 
 /*--------------------------------------------
-about
+    about
 ----------------------------------------------*/
-.about-info{
+.about-info {
     margin: auto 2rem;
-    h2{
+
+    h2 {
         margin-top: 1.175rem;
     }
 }
-.basic-info .hobby{
+.basic-info{
+    h2{
+        font-size: 1.5rem;
+    }
+}
+.basic-info .hobby {
     display: flex;
     flex-direction: column;
 }
-.about-cont{
+
+.about-cont {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 1.5rem auto;
 }
-.about-img{
+
+.about-img {
     width: 40%;
     height: 40%;
     max-width: 200px;
     margin-right: 2.5rem;
-    img{
+
+    img {
         border-radius: 50%;
     }
 }
-.hobby-list{
+
+.hobby-list {
     display: flex;
     //flex-direction: column;
     margin: 1.5rem auto;
 }
+
 /*--------------------------------------------
-skill
+    skill
 ----------------------------------------------*/
-.skill-card{
+.skill-card {
     @include card-border();
-    h3{
+
+    h3 {
         text-align: center;
     }
 }
-.skill-item{
+
+.skill-item {
     margin: 2rem 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.fa-orange{
+
+.fa-orange {
     color: #F79428;
 }
-.fa-blue{
+
+.fa-blue {
     color: #235BC8;
 }
-.fa-yellow{
+
+.fa-yellow {
     color: #FFD400;
 }
-.fa-sky{
+
+.fa-sky {
     color: #35C1DD;
 }
-.fa-red{
+
+.fa-red {
     color: #EF4644;
 }
+
 /*--------------------------------------------
-work
+    work
 ----------------------------------------------*/
-.work-item{
+.work-item {
     @include card-border();
-    img{
+
+    img {
         display: block;
         margin: 0 auto;
     }
 }
-.work-text{
+
+.work-text {
     margin: 5% auto;
 }
-.work-img{
+
+.work-img {
     border-radius: 20px 20px 0 0;
 }
-.fa-black{
+
+.fa-black {
     color: black;
 }
+
 /*--------------------------------------------
-contact
+    contact
 ----------------------------------------------*/
-.contact-link{
+.contact-link {
     display: flex;
     justify-content: space-around;
     margin: 8% 20%;
 }
+
+.fa-twitter-color {
+    color: #00acee;
+}
+
+.fa-purple {
+    color: #A03FFC;
+}
+
 /*--------------------------------------------
-footer
+    footer
 ----------------------------------------------*/
-#footer{
+#footer {
     margin-bottom: 0;
     background-color: darken(#b5dffa, 10%);
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 2.5rem;
-    a{
+
+    a {
         font-size: 1.5rem;
     }
 }
-.copyright{
+
+.copyright {
     background-color: darken(#b5dffa, 20%);
     text-align: center;
-    p{
+
+    p {
         color: $main-color;
         margin-bottom: 0;
         padding: .5rem;
     }
 }
-@media screen and (min-width: 1024px) {
-    .main-nav{
+
+@media screen and (min-width: 720px) {
+    .main-nav {
         width: 20%;
         max-width: 500px;
         display: flex;
 
     }
-    .btn-toggle{
+
+    .btn-toggle {
         display: none;
     }
-    
+
 }
