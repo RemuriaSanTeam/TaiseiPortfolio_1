@@ -46,7 +46,7 @@ section {
 #main-visual {
   background: url("../img/yokohama2021_10.png") no-repeat;
   background-size: cover;
-  padding: 8rem;
+  padding: 8rem 10rem;
 }
 
 #main-visual h1 {
@@ -56,7 +56,46 @@ section {
   padding: 1rem;
   display: inline-block;
   position: absolute;
-  margin: 0 auto;
+  margin: auto 50%;
+}
+
+/*--------------------------------------------
+    bottom-navigation
+--------------------------------------------*/
+.bottom-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #bb73ff;
+  width: 100%;
+}
+
+.bottom-menu li {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.bottom-menu a span {
+  display: block;
+  font-size: 20px;
+}
+
+.copyright {
+  background-color: #55b6f4;
+  text-align: center;
+}
+
+.copyright p {
+  color: #F79428;
+  margin-bottom: 0;
+  padding: .5rem;
 }
 
 /*--------------------------------------------
@@ -66,56 +105,63 @@ section {
   position: fixed;
 }
 
-.btn-trigger {
-  display: none;
-}
-
 .main-nav {
   display: none;
 }
 
+/*
+.menu-btn{
+    display: flex;
+    justify-content: end;
+}
+.btn-trigger {
+    display: none;
+}
+
 .btn-toggle {
-  position: absolute;
-  width: 50px;
-  height: 44px;
-  cursor: pointer;
-}
+    position: absolute;
+    width: 50px;
+    height: 44px;
+    //background: #35C1DD;
+    cursor: pointer;
 
-.btn-toggle span {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  background-color: #F79428;
-}
+    span {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        transition: all .5s;
+        background-color: $main-color;
 
-.btn-toggle span:nth-of-type(1) {
-  top: 0;
-}
+        &:nth-of-type(1) {
+            top: 0;
+        }
 
-.btn-toggle span:nth-of-type(2) {
-  top: 20px;
-}
+        &:nth-of-type(2) {
+            top: 20px;
+        }
 
-.btn-toggle span:nth-of-type(3) {
-  bottom: 0;
-}
+        &:nth-of-type(3) {
+            bottom: 0;
+        }
+    }
 
-.btn-toggle:active span:nth-of-type(1) {
-  -webkit-transform: translateY(20px) rotate(-45deg);
-          transform: translateY(20px) rotate(-45deg);
-}
+    &:active {
+        span {
+            &:nth-of-type(1) {
+                transform: translateY(20px) rotate(-45deg);
+            }
 
-.btn-toggle:active span:nth-of-type(2) {
-  opacity: 0;
-}
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
 
-.btn-toggle:active span:nth-of-type(3) {
-  -webkit-transform: translateY(-20px) rotate(45deg);
-          transform: translateY(-20px) rotate(45deg);
+            &:nth-of-type(3) {
+                transform: translateY(-20px) rotate(45deg);
+            }
+        }
+    }
 }
-
+*/
 /*--------------------------------------------
     about
 ----------------------------------------------*/
@@ -233,7 +279,7 @@ section {
 }
 
 .work-text {
-  margin: 5% auto;
+  margin: 5% 20px;
 }
 
 .work-img {
@@ -273,17 +319,7 @@ section {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2.5rem;
-}
-
-.nav a {
-  font-size: 1.5rem;
+  display: none;
 }
 
 .copyright {
@@ -305,8 +341,23 @@ section {
     display: -ms-flexbox;
     display: flex;
   }
+  .bottom-menu {
+    display: none;
+  }
   .btn-toggle {
     display: none;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2.5rem;
+  }
+  .nav a {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
