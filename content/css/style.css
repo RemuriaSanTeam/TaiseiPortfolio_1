@@ -299,7 +299,7 @@ section {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 8% 20%;
+  margin: 8% 20% 15%;
 }
 
 .fa-twitter-color {
